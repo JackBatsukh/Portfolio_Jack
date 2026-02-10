@@ -137,7 +137,7 @@ export default function Header() {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 transition-transform group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-cyan-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative z-10 text-white font-semibold">
-                {language === "EN" ? "Contact" : "Холбоо барих"}
+                {language === "EN" ? "Contact" : "Холбогдох"}
               </span>
             </motion.button>
           </div>
