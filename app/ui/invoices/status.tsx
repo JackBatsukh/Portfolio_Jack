@@ -1,7 +1,10 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
 
 export default function InvoiceStatus({ status }: { status: string }) {
+  function clsx(arg0: string, arg1: { 'bg-gray-100 text-gray-500': boolean; 'bg-green-500 text-white': boolean; }): string | undefined {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <span
       className={clsx(

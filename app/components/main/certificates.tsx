@@ -1,5 +1,4 @@
 "use client";
-import gsap from "gsap";
 // import { Observer } from "gsap/observer";
 import Image from "next/image";
 import { useLanguage } from "@/app/context/language-context";

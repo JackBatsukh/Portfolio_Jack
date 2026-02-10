@@ -1,9 +1,25 @@
 'use client';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
 import Link from 'next/link';
-import { generatePagination } from '@/app/lib/utils';
+// import { generatePagination } from '@/app/lib/utils';
+
+function clsx(...classes: (string | { [key: string]: boolean } | undefined)[]): string {
+  return classes
+    .flat()
+    .map((cls) => {
+      if (typeof cls === 'string') return cls;
+      if (typeof cls === 'object') {
+        return Object.entries(cls)
+          .filter(([_, value]) => value)
+          .map(([key]) => key)
+          .join(' ');
+      }
+      return '';
+    })
+    .filter(Boolean)
+    .join(' ');
+}
 
 export default function Pagination({ totalPages }: { totalPages: number }) {
   // NOTE: Uncomment this code in Chapter 11
@@ -86,7 +102,7 @@ function PaginationNumber({
 function PaginationArrow({
   href,
   direction,
-  isDisabled,
+  isDisabled = false,
 }: {
   href: string;
   direction: 'left' | 'right';
