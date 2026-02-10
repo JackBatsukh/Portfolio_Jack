@@ -15,7 +15,7 @@ const Education: React.FC = () => {
 
   const timelineData: TimelineEntry[] = [
     {
-      years: "201О - 2022",
+      years: "2010 - 2022",
       role: t.role1,
       institution: t.school,
     },
@@ -32,7 +32,7 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <div className="py-16 px-5">
+    <div className="py-38 px-5">
       <h2 className="text-5xl  text-white mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400 animate-fade-up">
         {language === "EN" ? "DEGREE" : "БОЛОВСРОЛ"}
       </h2>
