@@ -21,8 +21,8 @@ const certificates = [
   {
     title: "IBM back-end developer",
     description: "Certified by Google",
-    link: "https://www.coursera.org/account/accomplishments/certificate/IQB19GH4ADSO",
-    image: "/certificate2.png",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/MDW9A26RI9LU",
+    image: "/certificate3.png",
   },
 ];
 

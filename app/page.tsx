@@ -68,7 +68,6 @@ export default function Home() {
           }}
         />
 
-        {/* Floating code-like elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(20)].map((_, i) => (
             <motion.div
@@ -93,7 +92,6 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Animated scanning line */}
         <motion.div
           className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent h-32 pointer-events-none"
           animate={{
@@ -121,7 +119,7 @@ export default function Home() {
           
           {/* Profile Image */}
           <motion.div
-            className="relative lg:w-1/2 flex justify-center"
+            className="relative w-64 md:w-64 lg:w-96 flex justify-center mt-24"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
@@ -166,8 +164,8 @@ export default function Home() {
                   <Image
                     alt="profile"
                     src="/profile.jpg"
-                    width={420}
-                    height={420}
+                    width={400}
+                    height={400}
                     priority
                     className="rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border-2 border-white/10"
                   />
